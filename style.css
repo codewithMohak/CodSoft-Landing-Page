@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lobster&family=Sevillana&display=swap');
+.custom-navbar {
+  background: linear-gradient(270deg, #1a5319, #000000);
+}
+
+.custom-navbar .nav-link {
+  color: white;
+  font-family: "Concert one";
+}
+.custom-navbar .navbar-brand {
+  color: white;
+  font-family: "Concert one";
+  font-size: 24px;
+}
+.custom-navbar span {
+  color: white;
+}
+
+.hero {
+  background: url("intro.avif") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero h1 {
+  font-family: "Concert one", cursive;
+  font-size: 54px;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero .btn {
+  background: linear-gradient(270deg, #1a5319, #000000);
+  color: white;
+  font-family: 'ed garamonda';
+  border-radius: 20px;
+}
+
+.product-overview{
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.product-overview h2{
+    font-size: 45px;
+    color: #1A5319;
+    margin-bottom: 30px;
+    font-family:'Lobster' ;
+}
+
+.product-overview p{
+    font-size: 18px;
+    /* color: #508D4E; */
+    margin-bottom: 40px;
+    font-family: 'ED Garamond';
+}
+
+.card{
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} 
+
+.card-body{
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.card-title{
+    font-size: 25px;
+    font-family: 'concert one';
+    color: #1A5319;
+}
+
+.mission{
+    padding: 50px 0;
+    background: url('img.webp') no-repeat center center;
+    background-size: cover;
+}
+
+.mission h2{
+    font-size: 45px;
+    font-family: 'Lobster';
+    color: white;
+}
+
+.mission p{
+    font-size: 18px;
+    font-family: 'ED garamond';
+    max-width: 800px;
+    margin: 0 auto;
+    color: aliceblue;
+}
+
+.mission h2, .mission p{
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.team{
+    padding: 50px 0;
+
+}
+
+.team h2{
+    font-size: 45px;
+    color: #1A5319;
+    font-family: 'Lobster';
+    margin-bottom: 40px;
+}
+
+.team img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #597445;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.team:hover{
+    transform: scale(1.05);
+}
+
+.team h5{
+    font-size: 28px;
+    margin: 10px 0 5px;
+    font-family: 'concert one';
+}
+.team p{
+    font-size: 18px;
+    margin: 0;
+    font-family: 'ed garamonda';
+}
+
+.cta{
+    position: relative;
+    padding: 60px 0;
+    text-align: center;
+    background: url('img1.avif') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    color: white;
+}
+
+.cta::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+
+}
+
+.cta .container{
+    position: relative;
+    z-index: 2;
+}
+
+.cta h2{
+    font-size: 45px;
+    font-family: 'Lobster';
+
+}
+
+.cta p{
+    font-size: 18px;
+    font-family: 'ed garamonda';
+}
+
+.cta h2, .cta p{
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.cta a.btn{
+    font-size: 15px;
+    padding: 15px 30px;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #1A5319, black);
+    border: none;
+    font-family: 'ed garamonda';
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-section {
+    padding: 60px 0;
+    background-color: #f0f2f5;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    margin-bottom: 40px;
+    font-family: 'Concert one', cursive;
+    font-size: 34px;
+  }
+  
+  .contact-form p {
+    font-family: 'EB Garamond', serif;
+    font-weight: 200;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .contact-form-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(270deg, #1A5319,#000000);
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+
+  }
+  
+  .contact-form-link:hover {
+    color: wheat;
+    text-decoration: none;
+  }
+  
+  .contact-form-link:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(38, 143, 255, 0.5);
+  }
+
+  .about{
+    padding: 60px 0;
+    text-align: center;
+  }
+  .about h2{
+    margin-bottom: 40px;
+    font-size: 35px;
+    font-family: 'lobster';
+    color: #1A5319;
+  }
+  .about p{
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+  }
+  .about p,lead{
+    margin-bottom: 20px;
+    font-size: 20px;
+
+  }
+  .about .container {
+    max-width: 800px;
+    margin: auto;
+}
+
+footer{
+    background-color: #1A5319;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: url('img.webp') no-repeat ;
+    background-size: cover;
+}
+
+footer.container{
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+footer p{
+    font-size: 18px;
+    font-family: 'ed garamonda';
+}
+
